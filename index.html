@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEON DODGE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="game-wrapper">
+
+        <header>
+            <h1>NEON DODGE</h1>
+
+            <div class="stats">
+                <div class="stat">
+                    <span>SCORE</span>
+                    <strong id="score">0</strong>
+                </div>
+
+                <div class="stat">
+                    <span>BEST</span>
+                    <strong id="best">0</strong>
+                </div>
+
+                <div class="stat">
+                    <span>HEARTS</span>
+                    <strong id="hearts">❤️❤️❤️</strong>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button id="pauseBtn">⏸ PAUSE</button>
+                <button id="musicBtn">🔊 MUSIC</button>
+            </div>
+        </header>
+
+        <main id="gameArea">
+
+            <div id="startScreen" class="overlay">
+                <h2>NEON DODGE</h2>
+                <p>Dodge the falling neon blocks.</p>
+                <button id="startBtn">START GAME</button>
+            </div>
+            <button id="fullscreenBtn">⛶ FULLSCREEN</button>
+
+            <div id="pauseScreen" class="overlay hidden">
+                <h2>PAUSED</h2>
+                <p>Take a breath 😎</p>
+                <button id="resumeBtn">RESUME</button>
+            </div>
+
+            <div id="gameOverScreen" class="overlay hidden">
+                <h2>GAME OVER</h2>
+                <p>Your score</p>
+                <strong id="finalScore">0</strong>
+                <button id="restartBtn">PLAY AGAIN</button>
+            </div>
+
+            <div id="heartLost">
+                ❤️ A HEART LOST!
+            </div>
+
+            <div id="player"></div>
+
+        </main>
+
+        <div class="mobile-controls">
+            <button id="leftBtn">◀</button>
+            <button id="rightBtn">▶</button>
+        </div>
+
+        <footer>
+            <p>NEON DODGE • SURVIVE AS LONG AS YOU CAN</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+<div id="heartsLeftMessage"></div>
+
